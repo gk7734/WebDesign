@@ -2,6 +2,7 @@ import './globals.css'
 import { Nunito_Sans } from 'next/font/google'
 import Logo from "@/app/components/Logo";
 import Navbar from "@/app/components/Navbar";
+import Avatar from "@/app/components/Avatar";
 
 const nunitoSans = Nunito_Sans({ subsets: ['latin'] })
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
       <body className={`bg-[#F8F3ED] bg-no-repeat bg-cover ${nunitoSans.className}`}>
       <Logo />
       <Navbar />
+      <Avatar />
       {children}
       </body>
     </html>

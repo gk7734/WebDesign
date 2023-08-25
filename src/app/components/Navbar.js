@@ -21,8 +21,8 @@ function Navbar() {
                         </div>
                     )
                 })}
-                <div className={`p-[30px] cursor-pointer`}>
-                        <button className={`border-solid font-normal text-[#fff] w-[77px] h-[32px] bg-white/10 text-center opacity-15`}>Call Now</button>
+                <div className={`p-[25px] cursor-pointer`}>
+                        <button className={`border-solid font-normal text-[#fff] w-[87px] h-[42px] bg-white/10 text-center opacity-15`}>Call Now</button>
                 </div>
             </div>
         </nav>
