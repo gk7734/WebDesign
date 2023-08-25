@@ -14,15 +14,15 @@ function Navbar() {
                     return (
                         <div className='p-[32px] cursor-pointer'>
                             <Link href={link.path} className='flex flex-col items-center justify-between'>
-                                <div className='font-normal text-black text-center'>
+                                <div className='font-normal text-[#fff] text-center'>
                                     {link.name}
                                 </div>
                             </Link>
                         </div>
                     )
                 })}
-                <div className={`p-[32px] cursor-pointer`}>
-                        <button className={`border-solid border-[rgba(255, 255, 255, 0.15)] font-normal text-black text-center`}>Call Now</button>
+                <div className={`p-[30px] cursor-pointer`}>
+                        <button className={`border-solid font-normal text-[#fff] w-[77px] h-[32px] bg-white/10 text-center opacity-15`}>Call Now</button>
                 </div>
             </div>
         </nav>
