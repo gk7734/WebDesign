@@ -26,7 +26,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`bg-[#F8F3ED] bg-no-repeat bg-cover ${[nunitoSans.variable, playFairDisplay.variable]}`}>
+      <body className={`bg-[#F8F3ED] bg-no-repeat bg-cover ${[nunitoSans.variable, playFairDisplay.variable]} font-serif font-sans`}>
       <Logo />
       <Navbar />
       <Avatar />
