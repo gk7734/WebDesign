@@ -1,10 +1,22 @@
 import './globals.css'
-import { Nunito_Sans } from 'next/font/google'
+import { Nunito_Sans, Playfair_Display } from 'next/font/google'
 import Logo from "@/app/components/Logo";
 import Navbar from "@/app/components/Navbar";
 import Avatar from "@/app/components/Avatar";
 
-const nunitoSans = Nunito_Sans({ subsets: ['latin'] })
+// font setting
+const nunitoSans = Nunito_Sans({
+    subsets: ['latin'],
+    variable: '--font-nunitoSans',
+    weight: ['200', '300', '400', '500', '600', '700', '800']
+})
+
+// font setting
+const playFairDisplay = Playfair_Display({
+    subsets: ['latin'],
+    variable: '--font-playFairDisplay',
+    weight: ['400', '500', '600', '700', '800', "900"]
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -14,7 +26,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`bg-[#F8F3ED] bg-no-repeat bg-cover ${nunitoSans.className}`}>
+      <body className={`bg-[#F8F3ED] bg-no-repeat bg-cover ${[nunitoSans.variable, playFairDisplay.variable]}`}>
       <Logo />
       <Navbar />
       <Avatar />

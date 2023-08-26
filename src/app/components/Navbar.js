@@ -14,7 +14,7 @@ function Navbar() {
                     return (
                         <div className='p-[32px] cursor-pointer'>
                             <Link href={link.path} className='flex flex-col items-center justify-between'>
-                                <div className='font-normal text-[#fff] text-center'>
+                                <div className='font-normal text-[#fff] text-center text-[12px]'>
                                     {link.name}
                                 </div>
                             </Link>
@@ -22,7 +22,7 @@ function Navbar() {
                     )
                 })}
                 <div className={`p-[25px] cursor-pointer`}>
-                        <button className={`border-solid font-normal text-[#fff] w-[87px] h-[42px] bg-white/10 text-center opacity-15`}>Call Now</button>
+                        <button className={`border-solid font-normal text-[#fff] w-[77px] h-[32px] bg-white/10 text-center opacity-15 text-[12px]`}>Call Now</button>
                 </div>
             </div>
         </nav>
